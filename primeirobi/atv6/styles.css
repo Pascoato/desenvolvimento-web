@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  margin: 0;
+}
+
+.site-header {
+  background: #e8f0fe;
+  border-bottom: 2px solid #c6dafc;
+  width: 98%;
+  margin-left: 1%;
+  padding: 10px 14px;
+}
+.site-header h1 { margin: 6px 0 10px; font-size: 22px; }
+
+.menu { list-style: none; padding: 0; margin: 0; }
+.menu li { display: inline-block; margin-right: 8px; }
+.menu a { text-decoration: none; color: #b853f3; padding: 4px 6px; }
+.menu a:hover { background: #dfe8ff; }
+
+#conteudo {
+  width: 900px;
+  margin: 12px 0 0 30px;
+  padding: 6px;
+}
+
+.post {
+  float: left;
+  width: 62%;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 14px;
+  border-radius: 6px;
+}
+
+.lateral {
+  float: right;
+  width: 30%;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+#conteudo::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.post h2 { margin-top: 6px; font-size: 20px; }
+.post time { color: #666; display: inline-block; margin-bottom: 8px; }
+
+.todo { margin-top: 18px; }
+.todo h3 { margin: 0 0 8px; }
+
+.todo-controles { display: block; margin-bottom: 10px; }
+#tarefa {
+  width: 68%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+#adicionar {
+  padding: 9px 12px;
+  margin-left: 6px;
+  border: none;
+  background: #cb5aff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#adicionar:hover { background: #a940ff; }
+
+#lista { list-style: none; padding: 0; margin: 0; }
+#lista li {
+  background: #fafafa;
+  border: 1px dashed #aaa;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+#lista li:hover { background: #f0f0f0; }
+
+.dica { color: #666; font-size: 13px; }
+
+.site-footer {
+  background: #eee;
+  border-top: 1px solid #ddd;
+  padding: 18px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+@media (max-width: 700px) {
+  #conteudo { width: auto; margin: 10px; }
+  .post, .lateral { float: none; width: auto; }
+  #tarefa { width: 100%; margin-bottom: 8px; }
+  #adicionar { margin-left: 0; width: 100%; }
+}
