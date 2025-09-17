@@ -1,0 +1,139 @@
+/* * { box-sizing: border-box; }
+
+:root {
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --radius: 8px;
+  --primary: #2563eb;
+  --bg: #95b7fa;
+  --unused-color: #ff00ff;
+}
+
+html { font-size: 16px; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: #222;
+  line-height: 1.5;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+  gap: var(--space-3);
+  min-height: 100vh;
+  padding: 0 var(--space-2) var(--space-3);
+}
+
+header.site-header {
+  grid-area: header;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+main   { grid-area: main; }
+aside  { grid-area: aside; }
+footer { grid-area: footer; }
+
+header.site-header h1 {
+  margin: 0;
+  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
+  line-height: 1.2;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+nav a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  gap: var(--space-2);
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--primary) !important;
+  text-decoration: underline;
+  outline: none;
+}
+
+article.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: var(--space-2);
+  border-radius: var(--radius);
+  width: 100%;
+  margin: 0;
+}
+
+article.card h2 {
+  color: var(--primary);
+  margin-top: 0;
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.5rem);
+}
+
+article.card p { color: #333; font-size: 1rem; }
+
+figure { margin: var(--space-2) 0; }
+img { display: block; width: 100%; height: auto; }
+
+figcaption {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+  margin-top: var(--space-1);
+}
+
+aside.sidebar {
+  background: #fff;
+  border: 1px dashed #ddd;
+  padding: var(--space-2);
+  border-radius: var(--radius);
+}
+
+footer.site-footer {
+  border-top: 1px solid #ddd;
+  background: #cb6df7;
+  padding: var(--space-2);
+  text-align: center;
+  color: #666;
+  border-radius: var(--radius);
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: 1fr min(320px, 35%);
+    grid-template-areas:
+      "header header"
+      "main   aside"
+      "footer footer";
+  }
+} */
